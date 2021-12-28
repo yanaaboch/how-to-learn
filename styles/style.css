@@ -70,7 +70,7 @@
   position: absolute;
   background: #2f80ed;
   right: 0;
-  margin-top: 64px;
+  top: 64px;
 }
 
 .description {
@@ -220,6 +220,7 @@
 }
 
 .kaufman {
+  position: relative;
   background-color: #1f1f1f;
   padding-bottom: 90px;
   overflow: hidden;
@@ -252,6 +253,7 @@
   color: #2f80ed;
   right: -210px;
   z-index: 1;
+  top: 0;
 }
 
 .footer {

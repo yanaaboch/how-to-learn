@@ -27,6 +27,7 @@
   height: 32px;
   top: 30px;
   left: 64px;
+  background-image: url(../images/logo_place_header.svg);
 }
 
 .header__title {
@@ -34,19 +35,20 @@
   font-size: 102px;
   font-weight: bolder;
   margin: auto;
-  width: 730px;
+  max-width: 730px;
   margin-left: 64px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__subtitle {
   position: absolute;
-  width: 388px;
+  max-width: 388px;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
   font-size: 18px;
-  z-index: 1;
+  z-index: 2;
+  margin: 0;
 }
 
 .header__link {
@@ -90,7 +92,7 @@
   min-width: 784px;
 }
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
@@ -113,8 +115,6 @@
 
 .two-columns__span-accent {
   font-weight: bold;
-  line-height: 34px;
-  font-size: 24px;
 }
 
 .digits {
@@ -147,6 +147,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style-type: none;
 
 }
 
@@ -171,16 +172,17 @@
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
   background-color: #f2f2f2;
-  z-index: -2;
+  z-index: 1;
 }
+
 .feynman__title {
   padding-top: 100px;
   text-align: center;
   margin: auto;
-  width: 648px;
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bolder;
@@ -197,7 +199,7 @@
 
 .feynman__link {
   position: absolute;
-  height: 50%;
+  top: 50%;
   right: 48px;
   line-height: 51px;
   font-size: 36px;
@@ -214,7 +216,9 @@
   left: 0;
   bottom: 0;
   z-index: -1;
+  background-image: url(../images/feynman.png);
 }
+
 
 .kaufman {
   position: relative;
@@ -224,6 +228,7 @@
 }
 
 .section-title_theme_dark {
+  position: relative;
   margin-top: 0px;
   padding-top: 90px;
   color:white;
@@ -231,6 +236,7 @@
 }
 
 .section-subtitle_theme_dark {
+  position: relative;
   color: white;
   z-index: 2;
 }
@@ -247,10 +253,11 @@
   position: absolute;
   width: 877px;
   height: 877px;
-  color: #2f80ed;
   right: -210px;
-  z-index: 1;
   top: 0;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  z-index: 1;
 }
 
 .footer {
@@ -279,6 +286,7 @@
 .logo_place_footer {
   height: 35px;
   width: 183px;
+  background-image: url(../images/logo_place_footer.svg);
 }
 
 .footer__author {

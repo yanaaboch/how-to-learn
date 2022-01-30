@@ -2,8 +2,9 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bolder;
-  margin: auto;
+  align-self: center;
   max-width: 730px;
-  margin-left: 64px;
+  padding-left: 64px;
+  margin: 0;
   z-index: 2;
 }
